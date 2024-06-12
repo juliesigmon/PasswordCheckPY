@@ -26,4 +26,10 @@ def password_strength(password):
         strength = "Very Weak"
 
     return strength
-    
+
+# Example usage
+passwords = ["12345678", "P@$$w0rd", "Password", "Password123", "Admin"]
+
+for pwd in passwords:
+    print(f"Password: {pwd} - Strength: {password_strength(pwd)}")
+
